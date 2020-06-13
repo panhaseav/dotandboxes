@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/board_bg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10.5">
+
+        <LinearLayout
+                android:id="@+id/player1View"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/btn_bg_grey"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 1"
+                    android:textColor="#FF1414"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:id="@+id/player1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="player1Text"
+                    android:textColor="#FF1414" />
+
+            <TextView
+                    android:id="@+id/player1Boxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Boxes : 0"
+                    android:textColor="#FF1414" />
+
+        </LinearLayout>
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+        <LinearLayout
+                android:id="@+id/player2View"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/btn_bg_grey"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 2"
+                    android:textColor="#1389FF"
+                    android:textSize="20sp" />
+
+            <TextView
+                    android:id="@+id/player2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="player2Text"
+                    android:textColor="#1389FF" />
+
+            <TextView
+                    android:id="@+id/player2Boxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Boxes : 0"
+                    android:textColor="#1389FF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg_grey"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_access_time_black_24dp" />
+
+        <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="time"
+                android:textColor="#6C6C6C"
+                android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <uk.ac.bournemouth.ap.dotsandboxes.GameView
+            android:id="@+id/gameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

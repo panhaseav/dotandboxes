@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="board_bg">#54ECECEC</color>
+    <color name="white">#fff</color>
+    <color name="player_1_color">#3F51B5</color>
+    <color name="player_2_color">#FF4081</color>
+    <color name="pink">#FF4081</color>
+    <color name="orange">#FFA912</color>
+    <color name="color_from_icon">#FD7596</color>
+    <color name="color_from_icon_blue">#67D4FA</color>
+
+</resources>
